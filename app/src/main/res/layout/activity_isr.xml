@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="¿Qué es el ISR?"
+                android:textColor="#1F7E92"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:text="Es un impuesto que tiene como objetivo gravar los ingresos percibidos por un trabajador y que incrementan el patrimonio de un contribuyente. Sus siglas significan Impuesto Sobre la Renta."
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18dp"
+                android:text="Este impuesto se descuenta del salario bruto y después de ser aplicado queda el salario neto, esto quiere decir la cantidad exacta que recibirá el trabajador."
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:text="Este impuesto es uno de los más importantes del país y representa un importante cantidad en la recaudación, ya que es un impuesto que deben pagar tanto personas físicas como morales."
+                android:justificationMode="inter_word" />
+
+            <ImageView
+                android:layout_height="291dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/quienes_pagan_isr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="¿Quiénes deben pagar el ISR?"
+                android:textColor="#1F7E92"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                android:text="De acuerdo con el Artículo 1 de la Ley del Impuesto Sobre la Renta, las personas físicas y morales están obligadas a cumplir el pago del impuesto en los siguientes casos:"
+                android:textSize="18dp"
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:text="• Toda persona sea física o moral que resida en este país\n•Los ciudadanos mexicanos sean por nacimiento o por naturalización que tengan residencia en el extranjero y que gocen de algún establecimiento permanente en México\n•Todos aquellos residentes en el extranjero que obtengan ingresos de fuentes de riqueza ubicadas en territorio mexicano "
+                android:justificationMode="inter_word" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:text="Los extranjeros están obligados a cumplir con esta obligación fiscal si la fuente de sus ingresos se encuentra en nuestro territorio. Así que no hay pretexto, alista tu declaración anual y paga lo correspondiente."
+                android:justificationMode="inter_word" />
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

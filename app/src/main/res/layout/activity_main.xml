@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-47dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:foregroundTint="#142F93"
+            android:text="BIENVENIDO"
+            android:textColorLink="#423C6A"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="casual"
+            android:text="Calculadora de ISR"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/irCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E73CD"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Calcular ISR"
+            android:textSize="24sp"
+            app:cornerRadius="20dip"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="238dp" />
+
+        <Button
+            android:id="@+id/irInformacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E73CE"
+            android:elegantTextHeight="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="¿Qué es el ISR?"
+            android:textSize="24sp"
+            app:cornerRadius="20dip"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="238dp" />
+
+        <TextView
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Josué Vázquez Franco - ISC 2021" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

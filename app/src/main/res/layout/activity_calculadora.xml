@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="706dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Calculadora de ISR"
+            android:textColor="#000"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_span="2"
+                    android:background="#E8EAF6"
+                    android:backgroundTint="#E1F5FE"
+                    android:text="Calcula el ISR"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#4AE1F5FE"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Selecciona el Año: "
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/cmbOpciones1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFFFFF"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:background="#4AE1F5FE"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Selecciona el Período: "
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbGrupo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbOpc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diaria" />
+
+                    <RadioButton
+                        android:id="@+id/rbOpc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semanal" />
+
+                    <RadioButton
+                        android:id="@+id/rbOpc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decenal" />
+
+                    <RadioButton
+                        android:id="@+id/rbOpc4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quincenal" />
+
+                    <RadioButton
+                        android:id="@+id/rbOpc5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensual" />
+
+                </RadioGroup>
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#4AE1F5FE"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="INGRESOS:                             $"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/entrada"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="1"
+                    android:background="#4AE1F5FE"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:hint="0.00"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_height="match_parent"
+                    android:layout_span="3"
+                    android:backgroundTint="#5C6BC0"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Calcular"
+                    android:textSize="24sp"
+                    app:cornerRadius="8dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="25sp"
+            android:background="#B3E5FC"
+            android:backgroundTint="#E1F5FE"
+            android:text="Resultado"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="273dp"
+                android:layout_height="39dp"
+                android:text="Impuesto a Retener:                $"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/salida"
+                android:layout_width="136dp"
+                android:layout_height="39dp"
+                android:text="0.00"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
